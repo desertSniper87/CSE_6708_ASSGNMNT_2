@@ -33,7 +33,7 @@
 }
 
 
-\graphicspath{ {../object_property_topic_maps/} }
+\graphicspath{ {./images/} }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,18 +93,18 @@
 
 
 \begin{enumerate}
-    \item M. K. Shenoy, K. C. Shet and U. D.  Acharya. (2012, May). Semantic Plagiarism Detection System Using Ontology Mapping.  Advanced Computing: An International Journal [Online].3(3). \footnote{\url{http://airccse.org/journal/acij/papers/0512 acij06.pdf}} \label{listref1}
+    \item M. K. Shenoy, K. C. Shet and U. D.  Acharya. (2012, May). Semantic Plagiarism Detection System Using Ontology Mapping.  Advanced Computing: An International Journal 3(3). \footnote{\url{http://airccse.org/journal/acij/papers/0512 acij06.pdf}} \label{listref1}
     
     \item The Protégé Ontology Editor and Knowledge Acquisition System. \footnote{\url{http://protege.stanford.edu/}} (2013, July 1).  \label{listref2}
     
-    \item T. Bray, J. Paoli, C. M. Sperberg-McQueen, E. Maler and F. Yergeau.  (2004, February 4). Extensible Markup Language (XML) 1.0.  W3C Recommendation [Online]. Third Edition.
+    \item T. Bray, J. Paoli, C. M. Sperberg-McQueen, E. Maler and F. Yergeau.  (2004, February 4). Extensible Markup Language (XML) 1.0.  W3C Recommendation . Third Edition.
     \footnote{\url{http://www.w3.org/TR/2004/REC-xml20040204/}} \label{listref3}
     
-    \item F. Manola and E. Miller (2004, February 10). RDF Primer. W3C Recommendation [Online]. \footnote{\url{http://www.w3.org/TR/2004/REC-rdfprimer-20040210/}} \label{listref4}
+    \item F. Manola and E. Miller (2004, February 10). RDF Primer. W3C Recommendation. \footnote{\url{http://www.w3.org/TR/2004/REC-rdfprimer-20040210/}} \label{listref4}
     
-    \item S. Harris, A. Seaborne. (2013, March 21).  SPARQL 1.1 Query Language. W3C Recommendation [Online]. Available: \footnote{\url{http://www.w3.org/TR/2013/RECsparql11-query-20130321/}} \label{listref5}
+    \item S. Harris, A. Seaborne. (2013, March 21).  SPARQL 1.1 Query Language. W3C Recommendation. Available: \footnote{\url{http://www.w3.org/TR/2013/RECsparql11-query-20130321/}} \label{listref5}
     
-    \item J. Bao, D. Calvanese, B. C. Grau, et al.  (2012, December 11). OWL 2 Web Ontology Language.  W3C Recommendation [Online].  Second Edition. \footnote{\url{http://www.w3.org/TR/owl2-overview/}} \label{listref6}
+    \item J. Bao, D. Calvanese, B. C. Grau, et al.  (2012, December 11). OWL 2 Web Ontology Language.  W3C Recommendation.  Second Edition. \footnote{\url{http://www.w3.org/TR/owl2-overview/}} \label{listref6}
     
     \item E Akin, Object Oriented Programming, Houston: Rice University Publishing House, 2001, pp. 33-34.\label{listref7}
     
@@ -155,9 +155,9 @@
 	
 	\item Reference \ref{listref13} is the ISO reference model for topic maps. 
 	
-	\item Reference \ref{listref14}  
+	\item Reference \ref{listref14} is a article from Elsevier on how to visualize data using topic maps.
 	
-	\item Reference \ref{listref15}  
+	\item Reference \ref{listref15} is an paper published in an international conference on tools required to implement topic maps. 
 	
 \end{itemize}
 
@@ -165,6 +165,50 @@
 
 As we can see that references 3-6, 13 are specifications from W3C, ISO. Reference 2 is a website.
 And References 11, 12 are excerpts from books. So, we shall analyze refences 1, 8, 10, 14, 15.
+
+\section{Reference 1: Semantic Plagiarism Detection System Using Ontology Mapping}
+
+In this paper, the authors discuss the applications of using Semantic web ontologies to detect 
+plagiarism in text documents. The proposal is to train an ontology learner by feeding an ontology 
+mapping algorithm (a) Main copies and (b) Probable plagiarizations. \\
+
+The authors also experimented with a prototype TAO (Transitioning Applications to Ontologies) project but the implementation details are not given.
+
+\begin{figure}[]
+	\label{ref_1_arch}
+	\centering \includegraphics[scale=0.5]{ref_1_arch.png}
+	\caption{Architecture of the proposed detection system.}
+\end{figure}
+
+\break
+
+\section{Reference 8: An ontology-based retrieval system using semantic indexing}
+
+This Masters thesis, can be divided into three parts. In chapter 2, Background information,
+the authors discuss general information science with an emphasis on information retrieval (IR).
+They also discuss optimizing the information retrieval or searching process implementing indexing,
+ranking etc. They also discusss evaluation metrices. Finally the concept of Semantic Web is 
+introduced and the application to improve IR is discussed. \\
+
+In chapter 3, various approaches including traditional, semantic approaches are discussed. 
+The authors discuss semantic indexing and their proposed models. \\
+
+In chapter 4, the authors conceptualize their own semantic retrieval process. 
+
+\begin{figure}[h]
+	\label{ref_8_design}
+	\centering \includegraphics[scale=1.5]{ref_8_design.png}
+	\caption{System design of the proposed semantic retrieval system system.}
+\end{figure}
+
+\break
+
+So, in this system, information is gathered from \url{www.uefa.com} and \url{www.sporx.com} which
+are not semantically readable. These information are then fed into  Lucene Indexer and owl ontologies are formed from the gathered xml. In this way, both a indexed search engine and semantically 
+vaiable Knowledge base is created which are interlinked. Semantic ruleset is created and a 
+reasoner is used. So, information can be looked up efficently and accurately.
+
+\section{Reference 10: Towards Efficient SPARQL Query Processing on RDF Data}
 
 \chapter{Analyis of Citations of Given Paper}
 
