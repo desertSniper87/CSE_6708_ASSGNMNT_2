@@ -23,6 +23,8 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+\usepackage[nottoc]{tocbibind}
+
 
 
 \newcommand\blfootnote[1]{%
@@ -76,7 +78,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \tableofcontents
 \listoffigures
-\lstlistoflistings
+%\lstlistoflistings
 %\listoftables
 
 %\mainmatter
@@ -86,6 +88,10 @@
 %%%%%%%%%%%
 
 \chapter{Paper Summery}
+
+Extending the conclusion started in Assignment 1\footnote{\url{https://semantic-web.netlify.com/report/report.pdf}}, 
+we can see that the paper has some shortcomings. The main promising application of semantic web technologies is to create
+a knowledge base aiding information sciences. Although semantic indexing can aid traditional applications.
 
 \chapter{Analysis of References present in Given Paper}
 
@@ -210,9 +216,22 @@ reasoner is used. So, information can be looked up efficently and accurately.
 
 \section{Reference 10: Towards Efficient SPARQL Query Processing on RDF Data}
 
+In this original research paper, the authors talk about SPARQL query optimiztion. The main claims
+of the authors are, in some RDF data storage systems (eg. APACHE Jena, SOR), SPARQL queries are often translated into SQL statements. But as SPARQL triples does not translate well enough into SQL statements, many self-joins and table joins are required which causes slow-downs.
+
+\section{Reference 14: Visualizing search results and document collections using topic maps}
+
+
 \chapter{Analyis of Citations of Given Paper}
 
 \chapter{Future Work}
+
+\begin{thebibliography}{9}
+	\bibitem{latexcompanion} 
+	Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+	\textit{The \LaTeX\ Companion}. 
+	Addison-Wesley, Reading, Massachusetts, 1993.
+\end{thebibliography}
 
 \chapter{Appendix}
 
